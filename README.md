@@ -1,12 +1,10 @@
 # Can Investor Attention Be Traded?
 ### Search-attention signals and two-week returns in the S&P 100
 
-This project tests whether a sudden rise in Google searches for a company predicts its stock
-return over the next two weeks, building on Da, Engelberg & Gao (2011), *In Search of Attention*.
-
-## The question
 Investors pile into whatever is popular, especially during the current AI boom. Can an
 outsider make money by spotting that attention and following the crowd?
+This project tests whether a sudden rise in Google searches for a company predicts its stock
+return over the next two weeks, building on Da, Engelberg & Gao (2011), *In Search of Attention*.
 
 ## Method
 - **Universe:** 101 current S&P 100 constituents, Oct 2021 – Aug 2026 (258 weeks)
@@ -37,12 +35,8 @@ supported.**
   the filter, and inflated pooled t-statistics (3.81 → 1.22)
 - Known limitation: survivorship bias from using today's index members
 
-## Files
-- `notebook.ipynb`: full pipeline (data → cleaning → strategy → backtest → risk diagnostics)
-- `report.pdf`: write-up with hypothesis, methodology defence and pitfall checklist
-- `data/`: cached snapshot so the results reproduce exactly (`USE_CACHE = True`)
 
 ## Tools
 Python, pandas, NumPy, statsmodels, matplotlib, pytrends, yfinance
 
-**Author:** Nada Zueter · October 2026
+**Author:** Nada Zueter · October 2026 
